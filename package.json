@@ -2,9 +2,9 @@
   "name": "nekogrid-web",
   "version": "0.0.0",
   "description": "Browser nekogrid client",
-  "main": "index.js",
   "scripts": {
-    "test": "mocha && jshint ."
+    "test": "mocha && jshint .",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -23,14 +23,12 @@
     "chai": "*",
     "jshint": "*",
     "mocha": "*",
+    "traceur-loader": "^0.6.1",
     "webpack": "^1.4.13"
   },
   "dependencies": {
-    "es6-promise": "^2.0.0",
-    "jsjws": "^0.7.1",
-    "localforage": "^1.1.1",
+    "dexie": "^1.0.0",
     "react": "^0.12.1",
-    "telehash-cs2a": "~0.0.4",
     "telehash-promise": "^0.1.0",
     "telehash-ws": "^0.1.0"
   }
