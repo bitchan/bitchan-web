@@ -1,10 +1,13 @@
 "use strict";
 
 var path = require("path");
+var webpack = require("webpack");
+
+var DEBUG = process.env.NODE_ENV !== "production";
 
 function q(loaders, query) {
   return loaders + "?" + JSON.stringify(query);
-};
+}
 
 module.exports = {
   entry: {
@@ -12,8 +15,8 @@ module.exports = {
     vendor: "./src/vendor",
   },
   output: {
-    path: path.join(__dirname, "dist"),
-    filename: "[name].js",
+    path: path.join(__dirname, "dist", "static"),
+    filename: DEBUG ? "[name].js" : "[chunkhash:15].[name].js",
   },
 
   module: {
@@ -25,17 +28,21 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: [
-          "style/url",
           q("file", {
-            name: "[name].css",
+            name: DEBUG ? "[name].css" : "[hash:15].[name].css",
           }),
           q("sass", {
-            outputStyle: "expanded",
+            outputStyle: DEBUG ? "expanded" : "compressed",
             includePaths: ["bower_components/foundation/scss"],
           }),
         ],
       },
     ],
   },
+
+  plugins: DEBUG ? [] : [
+    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.OccurenceOrderPlugin(),
+  ],
 
 };
