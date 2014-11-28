@@ -4,7 +4,7 @@
   "description": "Browser nekogrid client",
   "scripts": {
     "test": "mocha && jshint .",
-    "build": "webpack"
+    "dev": "rm -rf dist && webpack"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,13 @@
   },
   "homepage": "https://github.com/nekogrid/nekogrid-web",
   "devDependencies": {
+    "bower": "^1.3.12",
     "chai": "*",
+    "file-loader": "^0.8.1",
     "jshint": "*",
     "mocha": "*",
+    "sass-loader": "^0.3.1",
+    "style-loader": "^0.8.2",
     "traceur-loader": "^0.6.1",
     "webpack": "^1.4.13"
   },

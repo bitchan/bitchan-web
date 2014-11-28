@@ -1,2 +1,1 @@
-export function test() {
-}
+require("./vendor.scss");
