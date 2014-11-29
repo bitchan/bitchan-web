@@ -21,10 +21,17 @@ module.exports = {
 
   module: {
     loaders: [
+      // All JS sources except vendor.
       {
-        test: /\.js$/,
+        test: new RegExp("^" + path.join(__dirname, "src", "(?!vendor).+\.js$")),
         loader: "traceur",
       },
+      // Vendor javascript.
+      {
+        test: path.join(__dirname, "src", "vendor.js"),
+        loader: "traceur?runtime",
+      },
+      // Vendor SCSS.
       {
         test: /\.scss$/,
         loaders: [
