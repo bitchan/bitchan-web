@@ -23,7 +23,7 @@ module.exports = {
     loaders: [
       // All JS sources except vendor.
       {
-        test: new RegExp("^" + path.join(__dirname, "src", "(?!vendor).+\.js$")),
+        test: new RegExp("^" + path.join(__dirname, "src", "(?!vendor).+\\.js$")),
         loader: "traceur",
       },
       // Vendor javascript.
