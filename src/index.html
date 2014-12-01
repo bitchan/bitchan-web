@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Neko Grid</title>
+    <link rel="stylesheet" href="/{%=o.htmlWebpackPlugin.options.bySuffix('vendor.css', o.webpack)%}">
+  </head>
+  <body>
+    <script src="/{%=o.webpack.assetsByChunkName.vendor%}"></script>
+    <script src="/{%=o.webpack.assetsByChunkName.nekogrid%}"></script>
+  </body>
+</html>

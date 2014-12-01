@@ -4,8 +4,11 @@
   "description": "Browser nekogrid client",
   "scripts": {
     "test": "mocha && jshint .",
-    "dev": "rm -rf dist && webpack",
-    "prepublish": "rm -rf dist && NODE_ENV=production webpack"
+    "clean": "rm -rf dist",
+    "build-dev": "npm run clean && webpack",
+    "build-release": "npm run clean && NODE_ENV=production webpack",
+    "start": "webpack-dev-server --port 4444 --history-api-fallback --colors",
+    "prepublish": "npm run build-release"
   },
   "repository": {
     "type": "git",
@@ -24,11 +27,13 @@
     "bower": "^1.3.12",
     "chai": "*",
     "file-loader": "^0.8.1",
+    "html-webpack-plugin": "^1.1.0",
     "jshint": "*",
     "mocha": "*",
     "sass-loader": "^0.3.1",
     "traceur-loader": "^0.6.1",
-    "webpack": "^1.4.13"
+    "webpack": "^1.4.13",
+    "webpack-dev-server": "^1.6.6"
   },
   "dependencies": {
     "dexie": "^1.0.0",
