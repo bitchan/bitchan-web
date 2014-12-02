@@ -72,7 +72,7 @@ module.exports = {
   },
 
   plugins: DEBUG ? commonPlugins : commonPlugins.concat([
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}}),
     new webpack.optimize.OccurenceOrderPlugin(),
   ]),
 

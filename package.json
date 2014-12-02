@@ -31,7 +31,7 @@
     "jshint": "*",
     "mocha": "*",
     "sass-loader": "^0.3.1",
-    "traceur-loader": "^0.6.1",
+    "traceur-loader": "^0.6.3",
     "webpack": "^1.4.13",
     "webpack-dev-server": "^1.6.6"
   },
