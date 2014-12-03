@@ -15,7 +15,6 @@ function st(filename) {
 }
 
 function getNameBySuffix(suffix, stats) {
-  console.log(stats.assets);
   return stats.assets.filter(function(asset) {
     return asset.name.slice(-suffix.length) === suffix;
   })[0].name;
