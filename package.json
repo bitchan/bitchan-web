@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Browser nekogrid client",
   "scripts": {
-    "test": "mocha && jshint .",
+    "test": "mocha && jsxhint .",
     "clean": "rm -rf dist",
     "build-dev": "npm run clean && webpack",
     "build-release": "npm run clean && NODE_ENV=production webpack",
@@ -28,8 +28,8 @@
     "chai": "*",
     "file-loader": "^0.8.1",
     "html-webpack-plugin": "^1.1.0",
-    "jshint": "*",
     "jsx-loader": "^0.12.2",
+    "jsxhint": "*",
     "mocha": "*",
     "sass-loader": "^0.3.1",
     "traceur-loader": "^0.6.3",
