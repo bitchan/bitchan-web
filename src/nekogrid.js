@@ -1,3 +1,4 @@
-let list = [1,2,3];
-list = list.map(x => x * 2);
-console.log(list);
+import React from "react";
+import Index from "./blocks/index/index";
+
+React.render(<Index />, document.getElementById("nekogrid"));

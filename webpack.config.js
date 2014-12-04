@@ -42,10 +42,13 @@ module.exports = {
       // All JS sources except vendor.
       {
         test: new RegExp("^" + path.join(__dirname, "src", "(?!vendor).+\\.js$")),
-        loader: q("traceur", {
-          // Don't use sourcemaps at this stage.
-          sourceMaps: false,
-        }),
+        loaders: [
+          q("traceur", {
+            // Don't use sourcemaps at this stage.
+            sourceMaps: false,
+          }),
+          "jsx",
+        ],
       },
       // Vendor javascript.
       {
