@@ -7,6 +7,11 @@
   </head>
   <body>
     <div id="nekogrid"></div>
+
+    {% if (o.htmlWebpackPlugin.options.DEBUG) { %}
+    <script src="/webpack-dev-server.js"></script>
+    {% } %}
+
     <script src="/{%=o.webpack.assetsByChunkName.vendor%}"></script>
     <script src="/{%=o.webpack.assetsByChunkName.nekogrid%}"></script>
   </body>

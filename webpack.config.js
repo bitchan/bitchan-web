@@ -24,6 +24,7 @@ var commonPlugins = [
   new HtmlWebpackPlugin({
     template: path.join("src", "index.html"),
     bySuffix: getNameBySuffix,
+    DEBUG: DEBUG,
   }),
 ];
 
