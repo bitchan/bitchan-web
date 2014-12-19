@@ -1,10 +1,10 @@
-# nekogrid-web [![Build Status](https://travis-ci.org/nekogrid/nekogrid-web.svg?branch=master)](https://travis-ci.org/nekogrid/nekogrid-web)
+# bitchan-web [![Build Status](https://travis-ci.org/bitchan/bitchan-web.svg?branch=master)](https://travis-ci.org/bitchan/bitchan-web)
 
-Browser [nekogrid](https://github.com/nekogrid/nekogrid) client.
+Browser [bitchan](https://github.com/bitchan/bitchan) client.
 
 ## License
 
-nekogrid-web - Browser nekogrid client
+bitchan-web - Browser bitchan client
 
 Written in 2014 by Kagami Hiiragi <kagami@genshiken.org>
 

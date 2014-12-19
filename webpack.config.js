@@ -31,7 +31,7 @@ var commonPlugins = [
 module.exports = {
   entry: {
     vendor: "./src/vendor",
-    nekogrid: "./src/nekogrid",
+    bitchan: "./src/bitchan",
   },
   output: {
     path: path.join(__dirname, "dist"),

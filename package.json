@@ -1,7 +1,7 @@
 {
-  "name": "nekogrid-web",
+  "name": "bitchan-web",
   "version": "0.0.0",
-  "description": "Browser nekogrid client",
+  "description": "Browser bitchan client",
   "scripts": {
     "test": "mocha && jsxhint .",
     "clean": "rm -rf dist",
@@ -12,17 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nekogrid/nekogrid-web.git"
+    "url": "https://github.com/bitchan/bitchan-web.git"
   },
   "keywords": [
-    "nekogrid"
+    "bitchan"
   ],
   "author": "Kagami Hiiragi",
   "license": "CC0",
   "bugs": {
-    "url": "https://github.com/nekogrid/nekogrid-web/issues"
+    "url": "https://github.com/bitchan/bitchan-web/issues"
   },
-  "homepage": "https://github.com/nekogrid/nekogrid-web",
+  "homepage": "https://github.com/bitchan/bitchan-web",
   "devDependencies": {
     "bower": "^1.3.12",
     "chai": "*",
