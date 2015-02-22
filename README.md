@@ -1,12 +1,24 @@
-# bitchan-web [![Build Status](https://travis-ci.org/bitchan/bitchan-web.svg?branch=master)](https://travis-ci.org/bitchan/bitchan-web)
+# bitchan-web [![Build Status](https://travis-ci.org/bitchan/bitchan-web.svg?branch=master)](https://travis-ci.org/bitchan/bitchan-web) [![npm version](https://badge.fury.io/js/bitchan-web.svg)](http://badge.fury.io/js/bitchan-web)
 
-Browser [bitchan](https://github.com/bitchan/bitchan) client.
+Browser bitchan client.
+
+Provides web interface for bitchan. Read more about bitchan [at the wiki](https://github.com/bitchan/meta/wiki).
+
+## Usage
+
+### With npm
+
+*TODO*
+
+### With deb package
+
+*TODO*
 
 ## License
 
 bitchan-web - Browser bitchan client
 
-Written in 2014 by Kagami Hiiragi <kagami@genshiken.org>
+Written in 2014-2015 by Kagami Hiiragi <kagami@genshiken.org>
 
 To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this software to the public domain worldwide. This software is distributed without any warranty.
 
