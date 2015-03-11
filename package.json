@@ -1,6 +1,6 @@
 {
   "name": "bitchan-web",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Browser bitchan client",
   "scripts": {
     "build-dev": "rm -rf dist && webpack",
