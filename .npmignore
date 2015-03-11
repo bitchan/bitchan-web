@@ -1,4 +1,3 @@
-/bower_components/
-/.travis.yml
-/.jshint*
-/src/
+/*
+!/COPYING
+!/dist/
