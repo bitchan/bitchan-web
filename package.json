@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "Browser bitchan client",
   "scripts": {
-    "test": "mocha && jsxhint .",
-    "j": "jsxhint .",
     "build-dev": "rm -rf dist && webpack",
     "build-release": "rm -rf dist && NODE_ENV=production webpack",
-    "start": "webpack-dev-server --port 4444 --history-api-fallback --colors",
-    "prepublish": "bower install && npm run build-release"
+    "prepublish": "bower install && npm run build-release",
+    "start": "webpack-dev-server --port 28444 --history-api-fallback --colors",
+    "test": "mocha && jsxhint .",
+    "j": "jsxhint ."
   },
   "repository": {
     "type": "git",
@@ -29,18 +29,16 @@
     "babel-runtime": "^4.7.8",
     "bower": "^1.3.12",
     "chai": "*",
+    "dexie": "^1.0.3",
     "file-loader": "^0.8.1",
+    "flux": "^2.0.1",
     "html-webpack-plugin": "^1.1.0",
     "jsx-loader": "^0.12.2",
     "jsxhint": "*",
     "mocha": "*",
+    "react": "^0.13.0",
     "sass-loader": "^0.3.1",
     "webpack": "^1.4.13",
     "webpack-dev-server": "^1.6.6"
-  },
-  "dependencies": {
-    "dexie": "^1.0.0",
-    "flux": "^2.0.1",
-    "react": "^0.12.1"
   }
 }
