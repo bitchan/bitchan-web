@@ -4,9 +4,9 @@
   "description": "Browser bitchan client",
   "scripts": {
     "test": "mocha && jsxhint .",
-    "clean": "rm -rf dist",
-    "build-dev": "npm run clean && webpack",
-    "build-release": "npm run clean && NODE_ENV=production webpack",
+    "j": "jsxhint .",
+    "build-dev": "rm -rf dist && webpack",
+    "build-release": "rm -rf dist && NODE_ENV=production webpack",
     "start": "webpack-dev-server --port 4444 --history-api-fallback --colors",
     "prepublish": "bower install && npm run build-release"
   },
@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/bitchan/bitchan-web",
   "devDependencies": {
+    "babel-core": "^4.7.8",
+    "babel-loader": "^4.1.0",
+    "babel-runtime": "^4.7.8",
     "bower": "^1.3.12",
     "chai": "*",
     "file-loader": "^0.8.1",
@@ -32,7 +35,6 @@
     "jsxhint": "*",
     "mocha": "*",
     "sass-loader": "^0.3.1",
-    "traceur-loader": "^0.6.3",
     "webpack": "^1.4.13",
     "webpack-dev-server": "^1.6.6"
   },

@@ -41,23 +41,13 @@ module.exports = {
   module: {
     loaders: [
       // All JS sources except vendor.
+      // TODO(Kagami): Move React and babel runtime code to vendor.
       {
         test: new RegExp("^" + path.join(__dirname, "src", "(?!vendor).+\\.js$")),
         loaders: [
-          q("traceur", {
-            // Don't use sourcemaps at this stage.
-            sourceMaps: false,
-          }),
+          q("babel", {optional: "runtime"}),
           "jsx",
         ],
-      },
-      // Vendor javascript.
-      {
-        test: path.join(__dirname, "src", "vendor.js"),
-        loader: q("traceur", {
-          runtime: true,
-          sourceMaps: false,
-        }),
       },
       // Vendor SCSS.
       {
