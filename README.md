@@ -13,9 +13,9 @@ Provides web interface for bitchan and is also compatible with other Bitmessage 
 `bitchan-web` executes all crypto operations on the client-side so it's rather safe to use prehosted version. <https://bitchan.it/> is the officially hosted `bitchan-web` instance, you might start with it to get the first impression of how it looks like.
 
 However beware of some dangers:
-* Don't use unknown instances to send sensitive data over it: owner of the site is able to add backdoor to the code so he/she will know all messages that you are trying to pass.
-* Don't use `bitchan.it` instance for sensitive data either: despite the fact it's secured by the HTTPS, some powerful attacker can get access to the server where it's hosted and inject malware into it. Also it's possible to issue different valid certificate and execute MITM so [here](https://raw.githubusercontent.com/bitchan/meta/master/bitchan.it.fingerprint.asc) is the current signed certificate fingerprint.
-* Domain and/or hosting may be seized for some reason so don't forget to periodically export your private keys and history stored in the browser. See [this issue](https://github.com/bitchan/meta/issues/3) for details.
+* Don't use unknown instances for sensitive data: owner of the site can add backdoor to the served static and read all your messages.
+* Don't use `bitchan.it` instance for sensitive data either: despite the fact it's secured by the HTTPS, some powerful attacker can get access to the server where it hosts and inject malware. Also corrupted CA can issue different valid certificate and execute MITM so [here](https://raw.githubusercontent.com/bitchan/meta/master/bitchan.it.fingerprint.asc) is the current signed certificate fingerprint.
+* Domain and/or hosting may be seized for some reason so don't forget to periodically backup your private keys and history stored in the browser. See [this issue](https://github.com/bitchan/meta/issues/3) for details.
 
 ### With bitchan-node
 
