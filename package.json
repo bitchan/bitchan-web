@@ -7,8 +7,8 @@
     "build-release": "rm -rf dist && NODE_ENV=production webpack",
     "prepublish": "bower install && npm run build-release",
     "start": "webpack-dev-server --port 28444 --history-api-fallback --colors",
-    "test": "mocha && jsxhint .",
-    "j": "jsxhint ."
+    "test": "mocha && jsxhint --es6module .",
+    "j": "jsxhint --es6module ."
   },
   "repository": {
     "type": "git",
@@ -24,16 +24,14 @@
   },
   "homepage": "https://github.com/bitchan/bitchan-web",
   "devDependencies": {
-    "babel-core": "^4.7.8",
-    "babel-loader": "^4.1.0",
-    "babel-runtime": "^4.7.8",
+    "babel-core": "^5.4.7",
+    "babel-loader": "^5.1.3",
     "bower": "^1.3.12",
     "chai": "*",
     "dexie": "^1.0.3",
     "file-loader": "^0.8.1",
     "flux": "^2.0.1",
     "html-webpack-plugin": "^1.1.0",
-    "jsx-loader": "^0.12.2",
     "jsxhint": "*",
     "mocha": "*",
     "react": "^0.13.0",

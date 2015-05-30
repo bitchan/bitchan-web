@@ -44,10 +44,7 @@ module.exports = {
       // TODO(Kagami): Move React and babel runtime code to vendor.
       {
         test: new RegExp("^" + path.join(__dirname, "src", "(?!vendor).+\\.js$")),
-        loaders: [
-          q("babel", {optional: "runtime"}),
-          "jsx",
-        ],
+        loaders: ["babel"],
       },
       // Vendor SCSS.
       {
